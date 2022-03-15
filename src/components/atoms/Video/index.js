@@ -27,12 +27,7 @@ const Video = ({ children, className, url, thumbnail }) => {
     };
   }, []);
 
-  // if the user clicks outside of video__modal, close modal
-  const handleOutsideClick = (e) => {
-    if (e.target.className === "video__modal") {
-      setShowVideo(false);
-    }
-  };
+  // if the user clicks outside of the modal, close it again
 
   return (
     <>
@@ -56,7 +51,6 @@ const Video = ({ children, className, url, thumbnail }) => {
               allowFullScreen
               height="100%;"
               width="100%;"
-              onClick={() => console.log("test")}
             ></iframe>
           </div>
         </div>

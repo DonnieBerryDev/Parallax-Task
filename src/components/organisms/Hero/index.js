@@ -69,7 +69,7 @@ const Hero = ({ children, className }) => {
             </div>
 
             <div className={styles.hero__cta}>
-              <Button colour="pink" link="#" outline>
+              <Button colour="pink" link="#" type="main" outline>
                 Get Started
               </Button>
             </div>

@@ -3,6 +3,8 @@
 
 .navigation {
   padding-top: rem(60);
+  position: relative;
+  z-index: 1;
   &__inner {
     display: flex;
     justify-content: space-between;

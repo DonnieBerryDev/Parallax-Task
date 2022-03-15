@@ -2,9 +2,9 @@ import styles from "./button.module.scss";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-const Button = ({ children, className, link, colour, outline }) => {
+const Button = ({ children, className, link, colour, outline, type }) => {
   const classes = cn(
-    styles.button,
+    styles[type],
     styles[colour],
     className,
     outline && `${styles[`outline--${colour}`]}`

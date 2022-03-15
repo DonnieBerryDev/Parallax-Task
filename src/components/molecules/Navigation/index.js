@@ -19,7 +19,9 @@ const Navigation = ({ children, className }) => {
             <ul>{children}</ul>
           </nav>
           <div className={styles.cta}>
-            <Button colour="pink">GET ZICKET</Button>
+            <Button colour="pink" type="main">
+              GET ZICKET
+            </Button>
           </div>
         </div>
       </div>

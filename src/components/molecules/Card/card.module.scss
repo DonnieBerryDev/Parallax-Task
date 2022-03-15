@@ -1,0 +1,57 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+.card {
+  //   padding: rem(0) 0;
+  &:not(:last-child) {
+    padding-bottom: rem(50);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &:nth-child(even) {
+    .content {
+      //   margin-left: 0;
+      //   margin-right: rem(150);
+      order: 1;
+    }
+
+    .image {
+      order: 2;
+    }
+  }
+}
+
+.content {
+  order: 2;
+  width: 50%;
+  padding-left: rem(100);
+  &__cta {
+    margin-top: rem(35);
+  }
+  &__header {
+    position: relative;
+    margin-bottom: rem(25);
+  }
+
+  &__copy {
+    max-width: rem(350);
+  }
+}
+
+.counter {
+  position: absolute;
+  left: 0;
+  top: -43px;
+}
+
+.image {
+  order: 1;
+  width: 50%;
+  max-height: rem(460);
+  img {
+    max-height: rem(460);
+  }
+}

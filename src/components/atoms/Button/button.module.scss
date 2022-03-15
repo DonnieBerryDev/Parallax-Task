@@ -1,7 +1,7 @@
 @import "../../../assets/styles/abstracts/mixins";
 @import "../../../assets/styles/abstracts/colours";
 
-.button {
+.main {
   padding: rem(20) rem(44);
   text-decoration: none;
   border-radius: 40px;
@@ -23,5 +23,42 @@
       outline-offset: 0;
       transition: 0.25s all ease;
     }
+  }
+}
+
+.subtle {
+  color: $clr-blue;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: url("");
+    background-image: url("../../../assets/images/icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    margin: auto;
+    align-items: center;
+    margin-left: rem(26);
+    outline-offset: rem(5);
+    transition: 0.25s all ease;
+    outline: 1px solid $clr-blue;
+    display: block;
+    background-color: #d7e8fe;
+    border-radius: 50%;
+    height: rem(50);
+    width: rem(50);
+    display: block;
+    text-align: center;
+  }
+  // target the psuedo element on hover {
+  &:hover::after {
+    outline-offset: 0;
+    outline: 1px solid #d7e8fe;
+    transition: 0.25s all ease;
   }
 }
