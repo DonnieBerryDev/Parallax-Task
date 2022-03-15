@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 400;
+  font-style: italic;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-BookItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 400;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 500;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 500;
+  font-style: italic;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 700;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: 800;
+  src: local("CircularStd"),
+    url("../fonts/CircularStd-Black.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+figure,
+button,
+a {
+  font-family: "CircularStd", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu,
+    Cantarell, Helvetica Neue;
+}
+
+.h1 {
+  &--main {
+  }
+}
+.h2 {
+  &--sub {
+  }
+}
+.h3 {
+  &--main {
+  }
+}
+.h4 {
+  &--main {
+  }
+
+  &--sub {
+  }
+}
+.h5 {
+  &--main {
+  }
+
+  &--alt {
+  }
+}
+
+.p {
+}
