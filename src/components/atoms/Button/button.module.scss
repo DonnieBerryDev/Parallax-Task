@@ -1,0 +1,27 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
+.button {
+  padding: rem(20) rem(44);
+  text-decoration: none;
+  border-radius: 40px;
+  display: block;
+  // outline the button with a gap between the border and the text
+}
+
+.pink {
+  background-color: $clr-pink;
+  color: $clr-white;
+  outline: 1px solid $clr-pink;
+}
+
+.outline {
+  &--pink {
+    outline-offset: rem(5);
+    transition: 0.25s all ease;
+    &:hover {
+      outline-offset: 0;
+      transition: 0.25s all ease;
+    }
+  }
+}

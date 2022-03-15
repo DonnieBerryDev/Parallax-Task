@@ -1,0 +1,29 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
+.navigation {
+  padding-top: rem(60);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    a {
+      color: $clr-white;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: rem(44);
+      }
+    }
+  }
+}
+
+.logo {
+  padding: rem(27) 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

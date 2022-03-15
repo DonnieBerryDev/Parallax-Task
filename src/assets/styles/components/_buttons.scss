@@ -5,3 +5,19 @@ button {
   cursor: pointer;
   outline: none;
 }
+.btn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  &--main {
+    @extend .btn;
+    font-size: rem(16);
+  }
+}
+
+.pink {
+  background: $clr-pink;
+}

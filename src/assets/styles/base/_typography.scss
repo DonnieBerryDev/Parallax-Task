@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Montserrat2";
+  src: url("../../../assets/fonts/montersat.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+button,
+a {
+  font-family: "Montserrat2", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu,
+    Cantarell, Helvetica Neue;
+}
+
+span,
+p,
+li {
+  font-family: "Open-Sans", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu,
+    Cantarell, Helvetica Neue;
+}
+
+.h1 {
+  &--main {
+    font-size: rem(70);
+    line-height: 0.85;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.p {
+  &--main {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+
+  &--sub {
+    font-size: rem(16);
+    line-height: 1.375;
+  }
+}
+
+.type {
+  &--outline {
+    -webkit-text-stroke-color: rgb(232, 230, 227);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #fff;
+  }
+}
