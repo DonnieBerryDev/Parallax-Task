@@ -7,7 +7,6 @@
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -20,7 +19,8 @@ a {
 
 span,
 p,
-li {
+li,
+h3 {
   font-family: "Open-Sans", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu,
     Cantarell, Helvetica Neue;
 }
@@ -31,6 +31,15 @@ li {
     line-height: 0.85;
     text-transform: uppercase;
     font-weight: 700;
+  }
+}
+
+.h3 {
+  &--main {
+    font-size: rem(26);
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: -0.65;
   }
 }
 
@@ -52,4 +61,8 @@ li {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px #fff;
   }
+}
+
+.bold {
+  font-weight: 700;
 }

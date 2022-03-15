@@ -3,6 +3,8 @@ import cn from "classnames";
 import PropTypes from "prop-types";
 import Button from "../../atoms/Button";
 import Navigation from "../../molecules/Navigation";
+import Video from "../../atoms/Video";
+import Thumbnail from "../../../assets/images/thumbnail.png";
 
 const Hero = ({ children, className }) => {
   const classes = cn(styles.hero, className);
@@ -71,6 +73,18 @@ const Hero = ({ children, className }) => {
                 Get Started
               </Button>
             </div>
+            <div className={styles.hero__bottomContent}>
+              <span>
+                Over <span className="bold">3,000,000</span> Tickets Sold at
+                some of Asia's Top Events Last Year
+              </span>
+            </div>
+          </div>
+          <div className={styles.hero__video}>
+            <Video
+              url="https://www.youtube.com/embed/eXqi9oJ6qiQ"
+              thumbnail={Thumbnail}
+            />
           </div>
         </div>
       </div>

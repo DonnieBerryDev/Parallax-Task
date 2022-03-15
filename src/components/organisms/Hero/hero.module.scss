@@ -9,6 +9,12 @@
   background-position: center;
   position: relative;
 
+  &__video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   &__banner {
     min-height: rem(60);
     position: fixed;
@@ -55,5 +61,15 @@
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  &__bottomContent {
+    position: absolute;
+    bottom: rem(70);
+    span {
+      color: $clr-white;
+      text-transform: uppercase;
+      font-size: rem(14);
+    }
   }
 }
