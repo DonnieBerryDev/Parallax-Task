@@ -93,7 +93,7 @@ const Swiper = ({ children, className }) => {
               onClick={() => swiperRef.current.swiper.slidePrev()}
             >
               <Button type="circle">
-                <img src={LeftArrow} className="" />
+                <img src={LeftArrow} className="" alt="" />
               </Button>
             </div>
             <div
@@ -101,7 +101,7 @@ const Swiper = ({ children, className }) => {
               onClick={() => swiperRef.current.swiper.slideNext()}
             >
               <Button type="circle">
-                <img src={RightArrow} />
+                <img src={RightArrow} alt="" />
               </Button>
             </div>
           </div>

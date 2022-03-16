@@ -9,9 +9,9 @@ function App() {
     <>
       <Hero />
       <CardBlock />
-      <section id="clients" className="fade--purple">
+      <div id="clients" className="fade--purple">
         <Swiper />
-      </section>
+      </div>
       <Contact />
     </>
   );
