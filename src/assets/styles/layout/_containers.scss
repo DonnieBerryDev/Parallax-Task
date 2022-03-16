@@ -9,4 +9,8 @@
     margin: 0 auto;
     padding: 0 rem(45);
   }
+
+  &--left {
+    padding-left: calc(50vw - rem(570));
+  }
 }

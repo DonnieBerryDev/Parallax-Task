@@ -62,3 +62,21 @@
     transition: 0.25s all ease;
   }
 }
+
+.circle {
+  border-radius: 50%;
+  height: rem(50);
+  width: rem(50);
+  display: block;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.1);
+  outline-offset: rem(5);
+  display: block;
+  outline: 1px solid rgb(255, 255, 255, 0.3);
+  transition: 0.25s all ease;
+  &:hover {
+    outline-offset: 0;
+    outline: 1px solid rgb(255, 255, 255, 0.1);
+    transition: 0.25s all ease;
+  }
+}

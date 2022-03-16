@@ -1,0 +1,46 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
+.cards {
+  //   display: flex;
+  //   width: 300px;
+  padding-bottom: rem(200);
+}
+
+.swiper {
+  &__buttons {
+    width: 100%;
+    padding-top: rem(75);
+    padding-bottom: rem(130);
+  }
+}
+.card {
+  //   max-width: 900px;
+  display: block;
+}
+
+.swiperCard {
+  min-width: rem(350);
+  position: relative;
+  // doesnt contain class 'swiper-slide-active'
+  &:not(.swiper-slide-active) {
+    img {
+      // darken by 20%
+      filter: brightness(0.7);
+    }
+  }
+}
+
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+  overflow: unset !important;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  &__left {
+    margin-right: rem(20);
+  }
+}

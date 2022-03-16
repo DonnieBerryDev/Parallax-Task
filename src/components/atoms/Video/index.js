@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 const Video = ({ children, className, url, thumbnail }) => {
   const classes = cn(styles.video, className);
-  // create a component that will be used to display the video in a modal
   const [showVideo, setShowVideo] = useState(false);
   const handleClick = () => {
     setShowVideo(true);
@@ -26,8 +25,6 @@ const Video = ({ children, className, url, thumbnail }) => {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
-
-  // if the user clicks outside of the modal, close it again
 
   return (
     <>
