@@ -1,6 +1,10 @@
 @import "../../../assets/styles/abstracts/mixins";
 @import "../../../assets/styles/abstracts/colours";
 
+.hyperlink {
+  text-decoration: none;
+}
+
 .swiperCard {
   //   width: 300px;
 
@@ -42,6 +46,9 @@
   &__title {
     opacity: 0.5;
     transition: 0.2s all ease;
+    h5 {
+      text-decoration: none;
+    }
   }
 
   &__image {

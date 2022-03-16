@@ -2,12 +2,20 @@ import styles from "./button.module.scss";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-const Button = ({ children, className, link, colour, outline, type }) => {
+const Button = ({
+  children,
+  className,
+  link,
+  colour,
+  outline,
+  type,
+  submitForm,
+}) => {
   const classes = cn(
     styles[type],
     styles[colour],
     className,
-    outline && `${styles[`outline--${colour}`]}`
+    outline && `${styles.outline}`
   );
   return (
     <>
@@ -18,6 +26,8 @@ const Button = ({ children, className, link, colour, outline, type }) => {
       ) : (
         <button className={classes}>{children}</button>
       )}
+
+      {submitForm && <input type="submit" className={classes} />}
     </>
   );
 };
@@ -29,6 +39,7 @@ Button.propTypes = {
   link: PropTypes.string,
   colour: PropTypes.string,
   outline: PropTypes.bool,
+  submitForm: PropTypes.bool,
 };
 
 Button.defaultProps = {

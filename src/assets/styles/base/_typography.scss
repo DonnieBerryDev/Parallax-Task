@@ -20,6 +20,7 @@ p,
 li,
 h4,
 h5,
+input,
 h3 {
   font-family: "Open-Sans", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu,
     Cantarell, Helvetica Neue;
@@ -62,6 +63,11 @@ h3 {
 .p {
   &--main {
     font-size: rem(16);
+    line-height: 1.875;
+  }
+
+  &--alt {
+    font-size: rem(14);
     line-height: 1.5;
   }
 

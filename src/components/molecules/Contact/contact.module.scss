@@ -1,0 +1,67 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
+.subText {
+  max-width: rem(248);
+  opacity: 0.3;
+  margin-top: rem(15);
+}
+
+.contact {
+  background: $clr-purple--deep;
+  &__inner {
+    padding: rem(105) 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.left {
+  width: 50%;
+  order: 1;
+}
+
+.right {
+  position: relative;
+  width: 50%;
+  order: 2;
+  form {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.email {
+  width: 100%;
+  margin-right: rem(52);
+}
+
+.message {
+  position: absolute;
+  bottom: -40px;
+  background: rgb(0, 0, 0, 0.2);
+  padding: rem(5) rem(15);
+  opacity: 0;
+}
+
+.baseMessage {
+  opacity: 0;
+  transition: 0.2s all ease;
+}
+
+.error {
+  color: red;
+  opacity: 1;
+  transition: 0.2s all ease;
+}
+
+.success {
+  color: rgb(5, 184, 5);
+  opacity: 1;
+  transition: 0.2s all ease;
+}
+
+.visable {
+  opacity: 1;
+  transition: 0.2s all ease;
+}

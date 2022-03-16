@@ -1,0 +1,25 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
+.input {
+  // reset styles
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.text {
+  &--main {
+    padding: rem(20) rem(15);
+    background: transparent;
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    &::placeholder {
+      color: rgb(255, 255, 255, 0.4);
+    }
+  }
+}

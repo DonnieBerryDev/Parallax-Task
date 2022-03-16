@@ -15,10 +15,19 @@
     a {
       color: $clr-white;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
       &:not(:last-child) {
         margin-right: rem(44);
       }
     }
+  }
+}
+
+.cta {
+  @media screen and (max-width: 940px) {
+    display: none;
   }
 }
 

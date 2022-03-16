@@ -8,6 +8,7 @@ $clr-pink: #f93b84;
 
 $clr-grey: #f1f5fb;
 $clr-white: #ffffff;
+$clr-purple--deep: #27117f;
 
 .clr-blue--dark {
   color: $clr-blue--dark;
@@ -29,6 +30,10 @@ $clr-white: #ffffff;
   color: $clr-white;
 }
 
+.clr-purple--deep {
+  color: $clr-purple--deep;
+}
+
 .clr-blue--dark--bg {
   background-color: $clr-blue--dark;
 }
@@ -43,4 +48,8 @@ $clr-white: #ffffff;
 
 .clr-pink--bg {
   background-color: $clr-pink;
+}
+
+.clr-purple--bg {
+  background-color: $clr-purple--deep;
 }
