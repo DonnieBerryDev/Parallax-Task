@@ -32,6 +32,9 @@ h3 {
     line-height: 0.85;
     text-transform: uppercase;
     font-weight: 700;
+    @media screen and (max-width: 768px) {
+      font-size: rem(48);
+    }
   }
 }
 

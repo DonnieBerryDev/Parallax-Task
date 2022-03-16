@@ -8,11 +8,20 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  @media screen and (max-width: 768px) {
+    height: 85%;
+  }
 
   &__video {
     position: absolute;
     bottom: 0;
     right: 0;
+    @media screen and (max-width: 1080px) {
+      left: 0;
+      width: auto;
+      text-align: center;
+      bottom: 85px;
+    }
   }
 
   &__banner {
@@ -62,11 +71,15 @@
     left: 0;
     bottom: 0;
     right: 0;
+    @media screen and (max-width: 768px) {
+      padding: 0 rem(15);
+    }
   }
 
   &__bottomContent {
     position: absolute;
     bottom: rem(70);
+    padding: 0 rem(15);
     span {
       color: $clr-white;
       text-transform: uppercase;

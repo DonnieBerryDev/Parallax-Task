@@ -36,5 +36,6 @@ Card.propTypes = {
   className: PropTypes.string,
   header: PropTypes.string,
   cta: PropTypes.object,
-  image: PropTypes.object,
+  image: PropTypes.any,
+  counter: PropTypes.any,
 };

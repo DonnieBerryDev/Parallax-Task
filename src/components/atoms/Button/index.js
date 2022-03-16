@@ -40,6 +40,7 @@ Button.propTypes = {
   colour: PropTypes.string,
   outline: PropTypes.bool,
   submitForm: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 Button.defaultProps = {

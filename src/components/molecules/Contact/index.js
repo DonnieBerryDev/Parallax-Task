@@ -51,7 +51,7 @@ const Contact = ({ children, className }) => {
         <div className={styles.contact__inner}>
           <div className={styles.left}>
             <div className={styles.header}>
-              <h5 class="h3--main clr-white">Stay up to date</h5>
+              <h5 className="h3--main clr-white">Stay up to date</h5>
             </div>
             <div className={styles.subText}>
               <p className="p--alt clr-white">

@@ -48,8 +48,8 @@ const Hero = ({ children, className }) => {
       </div>
       <Navigation>
         {links.map(({ id, text, link }) => (
-          <a href={link}>
-            <li key={id}>{text}</li>
+          <a href={link} key={id}>
+            <li>{text}</li>
           </a>
         ))}
       </Navigation>

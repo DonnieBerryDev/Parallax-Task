@@ -49,4 +49,11 @@ export default Input;
 
 Input.propTypes = {
   className: PropTypes.string,
+  type: PropTypes.string,
+  style: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool,
+  colour: PropTypes.string,
+  value: PropTypes.string,
+  name: PropTypes.string,
 };

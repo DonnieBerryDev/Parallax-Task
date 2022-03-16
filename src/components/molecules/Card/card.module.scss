@@ -11,6 +11,9 @@
   &__inner {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+    }
   }
 
   &:nth-child(even) {
@@ -19,6 +22,7 @@
       padding-left: rem(130);
       @media screen and (max-width: 1300px) {
         padding-left: 0;
+        order: 2;
       }
     }
 
@@ -32,8 +36,17 @@
   order: 2;
   width: 50%;
   padding-left: rem(100);
+  @media screen and (max-width: 990px) {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
   &__cta {
     margin-top: rem(35);
+    @media screen and (max-width: 990px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__header {
     position: relative;
@@ -42,6 +55,9 @@
 
   &__copy {
     max-width: rem(359);
+    @media screen and (max-width: 990px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -55,6 +71,11 @@
   order: 1;
   width: 50%;
   max-height: rem(460);
+  @media screen and (max-width: 990px) {
+    width: 100%;
+    margin-bottom: rem(25);
+    text-align: center;
+  }
   @media screen and (max-width: 1300px) {
     max-height: rem(250);
   }
@@ -62,6 +83,10 @@
     max-height: rem(460);
     @media screen and (max-width: 1300px) {
       max-height: rem(250);
+    }
+    @media screen and (max-width: 600px) {
+      object-fit: contain;
+      width: 100%;
     }
   }
 }

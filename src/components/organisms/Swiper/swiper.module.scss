@@ -5,6 +5,10 @@
   //   display: flex;
   //   width: 300px;
   padding-bottom: rem(200);
+  padding-left: rem(120);
+  @media screen and (max-width: 768px) {
+    padding-left: rem(15);
+  }
 }
 
 .swiper {

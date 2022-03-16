@@ -5,6 +5,11 @@
   padding-top: rem(60);
   position: relative;
   z-index: 1;
+  @media screen and (max-width: 940px) {
+    background: $clr-purple--deep;
+    position: fixed;
+    width: 100%;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -25,6 +30,12 @@
   }
 }
 
+.links {
+  @media screen and (max-width: 940px) {
+    display: none;
+  }
+}
+
 .cta {
   @media screen and (max-width: 940px) {
     display: none;
@@ -36,5 +47,26 @@
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+.hamburger {
+  display: block;
+  @media screen and (min-width: 940px) {
+    display: none;
+  }
+  div:nth-child(1) {
+    width: rem(45);
+    height: rem(4);
+    background: $clr-white;
+    margin-bottom: rem(8);
+  }
+  div:nth-child(2) {
+    width: rem(45);
+    height: rem(4);
+    background: $clr-white;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }

@@ -28,4 +28,8 @@ export default SwiperCard;
 
 SwiperCard.propTypes = {
   className: PropTypes.string,
+  id: PropTypes.number,
+  header: PropTypes.string,
+  image: PropTypes.string,
+  title: PropTypes.string,
 };

@@ -13,7 +13,7 @@ const Video = ({ children, className, url, thumbnail }) => {
     setShowVideo(false);
   };
 
-  // listen for user pressing escape key to close modal
+  // listening for user pressing escape key to close modal
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {

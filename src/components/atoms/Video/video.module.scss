@@ -1,6 +1,17 @@
+@import "../../../assets/styles/abstracts/mixins";
+@import "../../../assets/styles/abstracts/colours";
+
 .video {
   &__thumbnail {
-    cursor: pointer;
+    img {
+      cursor: pointer;
+      @media screen and (max-width: 1080px) {
+        max-height: rem(100);
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
   }
 
   &__modal {
@@ -14,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__inner {
       height: 80%;
       width: 80%;

@@ -3,12 +3,16 @@ import cn from "classnames";
 import PropTypes from "prop-types";
 import Button from "../../atoms/Button";
 import Logo from "../../../assets/images/logo.svg";
+import { useState } from "react";
+import Hamburger from "../Hamburger";
 
 const Navigation = ({ children, className }) => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
   const classes = cn(styles.navigation, className);
   return (
-    <div className={classes}>
-      <div className="container--max">
+    <div className={`${classes} ${hamburgerOpen && "h100"}`}>
+      <div className={`container--max ${hamburgerOpen && "h100"}`}>
         <div className={styles.navigation__inner}>
           <div className={styles.logo}>
             <a href="#">
@@ -23,7 +27,19 @@ const Navigation = ({ children, className }) => {
               GET ZICKET
             </Button>
           </div>
+          <div
+            className={styles.hamburger}
+            onClick={() => setHamburgerOpen((prev) => !prev)}
+          >
+            <div></div>
+            <div></div>
+          </div>
         </div>
+        <Hamburger
+          links={children}
+          isOpen={hamburgerOpen}
+          setIsOpen={setHamburgerOpen}
+        />
       </div>
     </div>
   );

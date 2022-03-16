@@ -55,12 +55,13 @@ const CardBlock = ({ children, className }) => {
   return (
     <div className={classes}>
       <div className="container--main">
-        {cards.map(({ id, header, copy, cta, image }) => (
+        {cards.map(({ id, header, copy, cta, image }, key) => (
           <Card
             counter={id > 10 ? id : "0" + id}
             header={header}
             cta={cta}
             image={image}
+            key={key}
           >
             {copy}
           </Card>
