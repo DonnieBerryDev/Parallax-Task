@@ -13,7 +13,7 @@ const SwiperCard = ({ children, className, id, header, image, title }) => {
             <h4 className="h4--card clr-white">{header}</h4>
           </div>
           <div className={styles.swiperCard__image}>
-            <img src={image} alt="" alt="" />
+            <img src={image} alt="" />
           </div>
           <div className={styles.swiperCard__title}>
             <h5 className="h5--card clr-white">{title}</h5>
